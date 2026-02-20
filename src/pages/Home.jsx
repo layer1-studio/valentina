@@ -11,7 +11,19 @@ import Newsletter from '../components/Newsletter';
 
 const Home = () => {
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // Handle hash scroll if present
+        if (window.location.hash) {
+            const id = window.location.hash.substring(1);
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+
         const observerOptions = {
             threshold: 0.1,
             rootMargin: "0px 0px -50px 0px"

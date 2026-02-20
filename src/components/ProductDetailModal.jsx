@@ -37,7 +37,7 @@ const ProductDetailModal = () => {
                             <ul>
                                 <li>Materials: {selectedProduct.metal || "18k Premium Metal"}</li>
                                 <li>Gemstone: {selectedProduct.gemstone || "Finest Quality Stones"}</li>
-                                <li>Craftsmanship: Traditional Parisian Atelier techniques</li>
+                                <li>Craftsmanship: Traditional Colombo Atelier techniques</li>
                                 <li>Warranty: Lifetime Certification of Authenticity</li>
                             </ul>
                         </div>
