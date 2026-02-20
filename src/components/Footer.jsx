@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>Explore</h4>
                     <ul>
-                        <li><Link to="/collections">Collections</Link></li>
+                        <li><Link to="/collections">Shop</Link></li>
                         <li><Link to="/collections">New Arrivals</Link></li>
                         <li><Link to="/collections">Gifts</Link></li>
                     </ul>
