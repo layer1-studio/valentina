@@ -8,9 +8,9 @@ const SearchOverlay = () => {
 
     // Mock search results
     const allProducts = [
-        { id: 1, name: "Sapphire Halo Ring", price: "$1,250.00", image: "/valentina/images/058A0402.jpg" },
-        { id: 2, name: "Pearl Drop Necklace", price: "$890.00", image: "/valentina/images/058A0411-Edit.jpg" },
-        { id: 3, name: "Gold Link Bracelet", price: "$2,100.00", image: "/valentina/images/058A0661-Edit.jpg" }
+        { id: 1, name: "Sapphire Halo Ring", price: "$1,250.00", image: `${import.meta.env.BASE_URL}images/058A0402.jpg` },
+        { id: 2, name: "Pearl Drop Necklace", price: "$890.00", image: `${import.meta.env.BASE_URL}images/058A0411-Edit.jpg` },
+        { id: 3, name: "Gold Link Bracelet", price: "$2,100.00", image: `${import.meta.env.BASE_URL}images/058A0661-Edit.jpg` }
     ];
 
     const results = query
