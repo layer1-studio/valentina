@@ -39,10 +39,10 @@ const Account = () => {
                         <h2>Sign In</h2>
                         <form className="login-form" onSubmit={(e) => {
                             e.preventDefault();
-                            login({ name: 'Rachel Cooray', email: e.target[0].value || 'test@valentina.com' });
+                            login({ name: 'Rachel Cooray', email: e.target[0].value || 'test123@valentina.com' });
                         }}>
                             <div className="form-group">
-                                <input type="email" placeholder="Email Address" required defaultValue="test@valentina.com" />
+                                <input type="email" placeholder="Email Address" required defaultValue="test123@valentina.com" />
                             </div>
                             <div className="form-group">
                                 <input type="password" placeholder="Password" required defaultValue="password123" />
