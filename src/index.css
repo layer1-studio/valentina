@@ -1269,10 +1269,16 @@ footer {
         font-size: 3.5rem;
     }
 
-    .nav-links,
-    .nav-icons {
+    .nav-links {
         display: none;
     }
+
+    .nav-icons {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
 
     .hamburger {
         display: block;
