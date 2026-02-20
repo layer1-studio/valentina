@@ -42,7 +42,7 @@ const Navbar = () => {
                         <Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMobileMenu}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/#collections" onClick={closeMobileMenu}>Collections</Link>
+                        <Link to="/collections" className={location.pathname === '/collections' ? 'active' : ''} onClick={closeMobileMenu}>Collections</Link>
                     </li>
                     <li>
                         <Link to="/#about-brand" onClick={closeMobileMenu}>Our Story</Link>
