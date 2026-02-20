@@ -20,8 +20,8 @@ const Bespoke = () => {
                     <a href="#" className="btn secondary-btn">Start Your Journey</a>
                 </div>
                 <div className="bespoke-image">
-                    <div className="image-wrapper">
-                        <img src="/valentina/images/058A0634.jpg" alt="Jeweller working" />
+                    <div className="bespoke-image animate-up">
+                        <img src={`${import.meta.env.BASE_URL}images/058A0652.jpg`} alt="Bespoke Consultation" />
                     </div>
                 </div>
             </div>

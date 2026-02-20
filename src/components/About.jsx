@@ -6,7 +6,7 @@ const About = () => {
             <div className="container">
                 <div className="about-grid">
                     <div className="about-image">
-                        <img src="/valentina/images/058A0413-Edit.jpg" alt="Our Atelier" />
+                        <img src={`${import.meta.env.BASE_URL}images/058A0413-Edit.jpg`} alt="Our Atelier" />
                     </div>
                     <div className="about-text">
                         <span className="subtitle">Our Story</span>

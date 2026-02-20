@@ -34,15 +34,15 @@ const Collections = () => {
     }, []);
 
     const products = [
-        { id: 1, name: "Sapphire Halo Ring", price: 1250, displayPrice: "$1,250.00", image: "/valentina/images/058A0402.jpg", category: "Rings", metal: "White Gold", gemstone: "Sapphire" },
-        { id: 2, name: "Pearl Drop Necklace", price: 890, displayPrice: "$890.00", image: "/valentina/images/058A0411-Edit.jpg", category: "Necklaces", metal: "Yellow Gold", gemstone: "Pearl" },
-        { id: 3, name: "Gold Link Bracelet", price: 2100, displayPrice: "$2,100.00", image: "/valentina/images/058A0661-Edit.jpg", category: "Bracelets", metal: "Yellow Gold", gemstone: "None" },
-        { id: 4, name: "Emerald Drop Earrings", price: 3400, displayPrice: "$3,400.00", image: "/valentina/images/058A0417-Edit.jpg", category: "Earrings", metal: "Platinum", gemstone: "Emerald" },
-        { id: 5, name: "Royal Bridal Set", price: 5600, displayPrice: "$5,600.00", image: "/valentina/images/058A0642-Edit.jpg", category: "Bridal", metal: "White Gold", gemstone: "Diamond" },
-        { id: 6, name: "Vintage Rose Ring", price: 1800, displayPrice: "$1,800.00", image: "/valentina/images/058A0416-Edit.jpg", category: "Rings", metal: "Rose Gold", gemstone: "Ruby" },
-        { id: 7, name: "Solitaire Pendant", price: 950, displayPrice: "$950.00", image: "/valentina/images/058A0409-Edit.jpg", category: "Necklaces", metal: "White Gold", gemstone: "Diamond" },
-        { id: 8, name: "Diamond Studs", price: 2200, displayPrice: "$2,200.00", image: "/valentina/images/058A0404.jpg", category: "Earrings", metal: "White Gold", gemstone: "Diamond" },
-        { id: 9, name: "Sterling Cuff", price: 450, displayPrice: "$450.00", image: "/valentina/images/058A0658-Edit.jpg", category: "Bracelets", metal: "White Gold", gemstone: "None" }
+        { id: 1, name: "Sapphire Halo Ring", price: 1250, displayPrice: "$1,250.00", image: `${import.meta.env.BASE_URL}images/058A0402.jpg`, category: "Rings", metal: "White Gold", gemstone: "Sapphire" },
+        { id: 2, name: "Pearl Drop Necklace", price: 890, displayPrice: "$890.00", image: `${import.meta.env.BASE_URL}images/058A0411-Edit.jpg`, category: "Necklaces", metal: "Yellow Gold", gemstone: "Pearl" },
+        { id: 3, name: "Gold Link Bracelet", price: 2100, displayPrice: "$2,100.00", image: `${import.meta.env.BASE_URL}images/058A0661-Edit.jpg`, category: "Bracelets", metal: "Yellow Gold", gemstone: "None" },
+        { id: 4, name: "Emerald Drop Earrings", price: 3400, displayPrice: "$3,400.00", image: `${import.meta.env.BASE_URL}images/058A0417-Edit.jpg`, category: "Earrings", metal: "Platinum", gemstone: "Emerald" },
+        { id: 5, name: "Royal Bridal Set", price: 5600, displayPrice: "$5,600.00", image: `${import.meta.env.BASE_URL}images/058A0642-Edit.jpg`, category: "Bridal", metal: "White Gold", gemstone: "Diamond" },
+        { id: 6, name: "Vintage Rose Ring", price: 1800, displayPrice: "$1,800.00", image: `${import.meta.env.BASE_URL}images/058A0416-Edit.jpg`, category: "Rings", metal: "Rose Gold", gemstone: "Ruby" },
+        { id: 7, name: "Solitaire Pendant", price: 950, displayPrice: "$950.00", image: `${import.meta.env.BASE_URL}images/058A0409-Edit.jpg`, category: "Necklaces", metal: "White Gold", gemstone: "Diamond" },
+        { id: 8, name: "Diamond Studs", price: 2200, displayPrice: "$2,200.00", image: `${import.meta.env.BASE_URL}images/058A0404.jpg`, category: "Earrings", metal: "White Gold", gemstone: "Diamond" },
+        { id: 9, name: "Sterling Cuff", price: 450, displayPrice: "$450.00", image: `${import.meta.env.BASE_URL}images/058A0658-Edit.jpg`, category: "Bracelets", metal: "White Gold", gemstone: "None" }
     ];
 
     const filteredProducts = useMemo(() => {

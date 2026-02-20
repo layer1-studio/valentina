@@ -10,7 +10,7 @@ const Collections = () => {
             <div className="collection-grid">
                 <div className="collection-item large">
                     <div className="img-container">
-                        <img src="/valentina/images/058A0430.jpg" alt="Diamond Necklace" />
+                        <img src={`${import.meta.env.BASE_URL}images/058A0430.jpg`} alt="Diamond Necklace" />
                     </div>
                     <div className="content">
                         <h3>Eternal Diamonds</h3>
@@ -19,7 +19,7 @@ const Collections = () => {
                 </div>
                 <div className="collection-item">
                     <div className="img-container">
-                        <img src="/valentina/images/058A0404.jpg" alt="Gold Rings" />
+                        <img src={`${import.meta.env.BASE_URL}images/058A0404.jpg`} alt="Gold Rings" />
                     </div>
                     <div className="content">
                         <h3>Royal Gold</h3>
@@ -28,7 +28,7 @@ const Collections = () => {
                 </div>
                 <div className="collection-item">
                     <div className="img-container">
-                        <img src="/valentina/images/058A0638-Edit.jpg" alt="Gemstone Earrings" />
+                        <img src={`${import.meta.env.BASE_URL}images/058A0638-Edit.jpg`} alt="Gemstone Earrings" />
                     </div>
                     <div className="content">
                         <h3>Vivid Gemstones</h3>
@@ -37,7 +37,7 @@ const Collections = () => {
                 </div>
                 <div className="collection-item">
                     <div className="img-container">
-                        <img src="/valentina/images/058A0642-Edit.jpg" alt="Bridal Set" />
+                        <img src={`${import.meta.env.BASE_URL}images/058A0642-Edit.jpg`} alt="Bridal Set" />
                     </div>
                     <div className="content">
                         <h3>Bridal Series</h3>
