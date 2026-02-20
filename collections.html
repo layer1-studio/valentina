@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Valentina</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Montserrat:wght@300;400;500;600&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled"> <!-- Always solid on subpages -->
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Valentina</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html" class="active">Collections</a></li>
+                <li><a href="index.html#bespoke">Bespoke</a></li>
+                <li><a href="index.html#about">Our Story</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Our Collections</h1>
+            <p>Curated pieces defining elegance and luxury.</p>
+        </div>
+    </header>
+
+    <!-- Main Shop Section -->
+    <section class="shop-section">
+        <div class="shop-container">
+            <!-- Filter Sidebar -->
+            <aside class="sidebar">
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><label><input type="checkbox"> Rings</label></li>
+                        <li><label><input type="checkbox"> Necklaces</label></li>
+                        <li><label><input type="checkbox"> Earrings</label></li>
+                        <li><label><input type="checkbox"> Bracelets</label></li>
+                        <li><label><input type="checkbox"> Bridal</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Metal</h3>
+                    <ul>
+                        <li><label><input type="checkbox"> Yellow Gold</label></li>
+                        <li><label><input type="checkbox"> White Gold</label></li>
+                        <li><label><input type="checkbox"> Rose Gold</label></li>
+                        <li><label><input type="checkbox"> Platinum</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-slider">
+                        <input type="range" min="0" max="10000" value="5000" class="slider" id="priceRange">
+                        <p>Max Price: $<span id="priceValue">5000</span></p>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Gemstone</h3>
+                    <ul>
+                        <li><label><input type="checkbox"> Diamond</label></li>
+                        <li><label><input type="checkbox"> Sapphire</label></li>
+                        <li><label><input type="checkbox"> Emerald</label></li>
+                        <li><label><input type="checkbox"> Ruby</label></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="shop-grid">
+                <div class="shop-controls">
+                    <p>Showing 9 results</p>
+                    <select class="sort-select">
+                        <option value="featured">Sort by: Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+
+                <div class="products-container">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1603974372039-adc49044b6bd?q=80&w=2670&auto=format&fit=crop"
+                                alt="Sapphire Ring">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sapphire Halo Ring</h4>
+                            <p>$1,250.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1589128771229-607059aa99f9?q=80&w=2670&auto=format&fit=crop"
+                                alt="Pearl Necklace">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Pearl Drop Necklace</h4>
+                            <p>$890.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2670&auto=format&fit=crop"
+                                alt="Gold Bracelet">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Gold Link Bracelet</h4>
+                            <p>$2,100.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=2670&auto=format&fit=crop"
+                                alt="Earrings">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Emerald Drop Earrings</h4>
+                            <p>$3,400.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?q=80&w=2670&auto=format&fit=crop"
+                                alt="Bridal Set">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Royal Bridal Set</h4>
+                            <p>$5,600.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1599643478518-17488fbbcd75?q=80&w=2670&auto=format&fit=crop"
+                                alt="Custom Ring">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Vintage Rose Ring</h4>
+                            <p>$1,800.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=2670&auto=format&fit=crop"
+                                alt="Pendant">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Solitaire Pendant</h4>
+                            <p>$950.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1630019852942-f89202989a51?q=80&w=2670&auto=format&fit=crop"
+                                alt="Diamond Earrings">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Diamond Studs</h4>
+                            <p>$2,200.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1629224316810-9d8805b95076?q=80&w=2670&auto=format&fit=crop"
+                                alt="Silver Bracelet">
+                            <div class="overlay">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sterling Cuff</h4>
+                            <p>$450.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Valentina</h3>
+                <p>Exquisite jewellery for those who appreciate the finer things in life.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Bespoke</a></li>
+                    <li><a href="#">Gifts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p>123 Luxury Avenue,<br>Paris, France 75001</p>
+                <p>+33 1 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Valentina Jewellers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple Price Slider Logic
+        const slider = document.getElementById("priceRange");
+        const output = document.getElementById("priceValue");
+
+        if (slider && output) {
+            slider.oninput = function () {
+                output.innerHTML = this.value;
+            }
+        }
+    </script>
+</body>
+
+</html>
